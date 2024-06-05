@@ -9,15 +9,15 @@ import {
 
 export default function Navbar() {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="sm:mb-20 mb-10 flex items-center sm:justify-between flex-col sm:flex-row py-6">
       <div className="flex flex-shrink-0 items-center">
         <img src={logo} alt="logo" className="mx-2 w-10" />
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin/>
-        <FaGithub/>
-        <FaInstagram/>
-        <FaTwitterSquare/>
+      <div className="sm:m-8 m-5 flex items-center justify-center gap-4 text-xl sm:text-2xl">
+        <a href="#"><FaLinkedin/></a>
+        <a href="https://github.com/Alireza-ghanbari"><FaGithub/></a>
+        <a href="#"><FaInstagram/></a>
+        <a href="#"><FaTwitterSquare/></a>
       </div>
     </nav>
   );
